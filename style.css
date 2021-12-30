@@ -165,3 +165,108 @@ body {
   line-height: 1.4;
 }
 
+#skills:before {
+	display: block;
+	content: "";
+	height: 84px;
+	margin: -84px 0 0 0;
+}
+
+.skills-exemple-wrap {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.skills-bar-wrap {
+  max-width: 460px;
+  width: 100%;
+  padding: 0 0 0 30px;
+}
+
+.container-skills-bar {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #7e8486;
+  border-radius: 30px;
+}
+
+.skill {
+  text-align: right;
+  padding: 0 20px 0 0;
+  line-height: 30px;
+  color: white;
+}
+
+.skills-bar h2 {
+  font-size: 34px;
+  font-weight: bold;
+  padding: 30px 0 30px 0;
+}
+
+.skills-bar p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+}
+.html {
+  width: 80%;
+  border-radius: 30px;
+  background-color: #e9471e;
+}
+
+.css {
+  width: 75%;
+  border-radius: 30px;
+  background-color: #2196f3;
+}
+
+.js {
+  width: 30%;
+  border-radius: 30px;
+  background-color: #e69c24;
+}
+.git {
+  width: 40%;
+  border-radius: 30px;
+  background-color: #3b3939;
+}
+.figma {
+  width: 60%;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #f16947, #fa8072, #8b008b, #62a2f6, #52ee6c);
+}
+
+.exempl-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+}
+
+
+.exempl-code h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 40px 0;
+}
+
+.exemple-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+}
+
+.btn {
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #242729;
+  border-radius: 30px;
+  background-color: #5fd1d1;
+  box-shadow: 11px 7px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn :hover {
+  color: #f3fafa;
+}
+
