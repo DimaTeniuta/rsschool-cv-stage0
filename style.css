@@ -1,5 +1,319 @@
+html {
+  scroll-behavior: smooth; 
+}
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  max-width: 1120px;
+  z-index: 1000;
+  width: 100%;
+  background-color: #222222;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.header-nav > li {
+  padding: 30px 50px 30px 50px;
+}
+
+.link {
+  color: #5fd1d1;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  background-color: #e9e9e8;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #dddada;
+}
+
+.acquaintance {
+  display: flex;
+  max-height: 373px;
+  padding: 84px 0 0 0;
+}
+
+.avatar-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 2;
+  padding: 0 0 0 70px;
+}
+
+.line {
+  border-top: 2px solid #acaca9;
+}
+
+#contacts:before {
+	display: block;
+	content: "";
+	height: 60px;
+	margin: -55px 0 0 0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 30px 0;
+  padding: 0 0 0 30px;
+}
+
+
+.social-list {
+  display: flex;
+}
+
+.socials {
+  padding: 0 40px 0 0;
+}
+
+@keyframes icons-live {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+  20%,
+  40% {
+    transform: rotate(10deg);
+  }
+}
+
+.socials :hover {
+  animation: icons-live 1s ease-in-out;
+}
+
+#about:before {
+	display: block;
+	content: "";
+	height: 84px;
+	margin: -84px 0 0 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 30px;
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+
+.about-me-text {
+  max-width: 600px;
+  padding: 40px 10px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+#skills:before {
+	display: block;
+	content: "";
+	height: 84px;
+	margin: -84px 0 0 0;
+}
+
+.skills-exemple-wrap {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.skills-bar-wrap {
+  max-width: 460px;
+  width: 100%;
+  padding: 0 0 0 30px;
+}
+
+.container-skills-bar {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #7e8486;
+  border-radius: 30px;
+}
+
+.skill {
+  text-align: right;
+  padding: 0 20px 0 0;
+  line-height: 30px;
+  color: white;
+}
+
+.skills-bar h2 {
+  font-size: 34px;
+  font-weight: bold;
+  padding: 30px 0 30px 0;
+}
+
+.skills-bar p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+}
+.html {
+  width: 80%;
+  border-radius: 30px;
+  background-color: #e9471e;
+}
+
+.css {
+  width: 75%;
+  border-radius: 30px;
+  background-color: #2196f3;
+}
+
+.js {
+  width: 30%;
+  border-radius: 30px;
+  background-color: #e69c24;
+}
+.git {
+  width: 40%;
+  border-radius: 30px;
+  background-color: #3b3939;
+}
+.figma {
+  width: 60%;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #f16947, #fa8072, #8b008b, #62a2f6, #52ee6c);
+}
+
+.exempl-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+}
+
+
+.exempl-code h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 40px 0;
+}
+
+.exemple-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+}
+
+.btn {
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #242729;
+  border-radius: 30px;
+  background-color: #5fd1d1;
+  box-shadow: 11px 7px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn :hover {
+  color: #f3fafa;
+}
+
+.aducation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.aducation-text {
+  max-width: 600px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.footer-container {
+  background-color: #e9e9e8;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: #222222;
+}
+
+.year {
+  font-size: 16px;
+  padding: 0 80px 0 0;
+  color: #d1d1ce;
+}
+
+.rss {
+  padding: 10px 0 10px 0;
+}
+
+.github {
+  padding: 10px 0 10px 0;
+}
+
+.fot :hover {
+  animation: icons-live 1s ease-in-out;
 }

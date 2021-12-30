@@ -5,9 +5,226 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300;700&display=swap"
+    />
+  <link rel="icon" href="./assets/svg/icons.ico" />
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<h1>Dzmitry Tsianiuta</h1>
+
+  <header class="header-wrap">
+    <nav class="header">
+          <ul class="header-nav">
+            <li>
+              <a class="link" href="#contacts">contacts</a>
+            </li>
+            <li>
+              <a class="link" href="#about">about</a>
+            </li>
+            <li>
+              <a class="link" href="#skills">skills</a>
+            </li>
+            <li>
+              <a class="link" href="#exemple">exemple</a>
+            </li>
+            <li>
+              <a class="link" href="#aducation">aducation</a>
+            </li>
+          </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="container">
+        <section>
+          <div class="acquaintance">
+            <div class="avatar">
+              <img 
+                src="./assets/img/avatar.jpg"
+                width="268"
+                height="373"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar-text">
+              <h1>Hi! My name`s Dima. I am a future Front-end developer.</h1>
+            </div>
+          </div>
+        </section>
+        <div class="line"></div>
+
+        <section id="contacts">
+          <div class="social-wrap">
+            <div class="social">
+              <h2>My contacts</h2>
+              <ul class="social-list">
+                <li>
+                  <a
+                    class="socials"
+                    href="https://www.instagram.com/dmitriy_teniyta/?hl=ru"
+                    target="_blank"
+                    ><img src="./assets/svg/Instagram.svg" alt="img" width="50"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="socials"
+                    href="https://vk.com/dimateniyta"
+                    target="_blank"
+                    ><img src="./assets/svg/vk.svg" alt="vk" width="50"
+                  /></a>
+                </li>
+                <li>
+                  <a class="socials" href="mailto:DTeniuta@gmail.com"
+                    ><img src="./assets/svg/Mail.svg" alt="email" width="50"
+                  /></a>
+                </li>
+                <li>
+                  <a class="socials" href="tel:+375(44)-791-14-20"
+                    ><img src="./assets/svg/Phone.svg" alt="tel" width="50"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="line"></div>
+
+        <section id="about">
+          <div class="about-wrap">
+            <div class="about-me">
+              <h2>About me</h2>
+              <p class="about-me-text">
+                I am Dzmitry Tsianiuta. I am 31 years old. I recently learned about the profession of
+                Front-end developer and I really liked it. I really enjoy
+                learning web development. I believe that my learning ability
+                and my aspirations will help me become a good developer.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="line"></div>
+
+        <section id="skills">
+          <div class="skills-exemple-wrap">
+            <div class="skills-bar-wrap">
+              <div class="skills-bar">
+                <h2>Skills</h2>
+                <ul>
+                  <li>
+                    <p>HTML</p>
+                    <div class="container-skills-bar">
+                      <div class="skill html">80%</div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>CSS</p>
+                    <div class="container-skills-bar">
+                      <div class="skill css">75%</div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>JavaScript</p>
+                    <div class="container-skills-bar">
+                      <div class="skill js">30%</div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Git</p>
+                    <div class="container-skills-bar">
+                      <div class="skill git">40%</div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Figma</p>
+                    <div class="container-skills-bar">
+                      <div class="skill figma">60%</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="exempl-code">
+              <h2>Exemple code</h2>
+              <span class="code">
+                <code>
+                  function add(num1, num2) { <br>
+                    let num3 = num1.toString().split('').reverse(); <br>
+                    &nbsp; let num4 = (num2.toString().split('')).reverse(); <br>
+                    &nbsp; let x; <br>
+                    &nbsp; let result = []; <br>
+                    &nbsp; if (num3.length >= num4.ltngth) {<br>
+                      &nbsp; &nbsp;x = num3; <br>
+                    &nbsp; } else { <br>
+                        &nbsp; &nbsp; x = num4; <br>
+                    &nbsp; }; <br>
+                    &nbsp; for (let i = 0; i &lt; = x.length; i++) { <br>
+                          &nbsp; &nbsp; result = (+(num3[i] || 0) + +(num4[i] || 0)) + result; <br>
+                    &nbsp; }; <br>
+                          &nbsp; &nbsp; return +result; <br>
+                    &nbsp; };
+                </code>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <div id="exemple">
+          <ul class="exemple-link">
+            <li class="btn">
+              <a href="./assets/img/chair.png" target="_blank">exemple work</a>
+            </li>
+            <li class="btn">
+              <a href="./assets/img/mamon.png" target="_blank">exemple work</a>
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div>
+
+        <section id="aducation">
+          <div class="aducation-wrap">
+            <div class="aducation">
+              <h2 class="aducation-text-bold">Aducation</h2>
+              <p class="aducation-text">
+                I am learning HTML CSS and JavaScript on my own. I learn
+                English at an English school twice a week. My English level is A1
+              </p>
+            </div>
+          </div>
+        </section>
+    </div>
+  </main>
+
+  <footer class="footer-container">
+    <div class="footer-wrap">
+      <div class="rss fot">
+        <a href="https://rs.school/js/" target="_blank"
+          ><img
+            src="./assets/svg/rs_school_js.svg"
+            alt="img-rss"
+            width="192"
+            height="67"
+        /></a>
+      </div>
+      <div class="year">
+        <p>&copy; Dzmitry Tsianiuta 2021</p>
+      </div>
+      <div class="github fot">
+        <a href="https://github.com/DimaTeniuta" target="_blank"
+          ><img
+            src="./assets/svg/Github.svg"
+            alt="img-github"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+    </div>
+</footer>
+
 </body>
 </html>
