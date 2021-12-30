@@ -65,3 +65,32 @@ body {
 .link:hover {
   text-decoration: underline;
 }
+
+.wrap {
+  background-color: #e9e9e8;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #dddada;
+}
+
+.acquaintance {
+  display: flex;
+  max-height: 373px;
+  padding: 84px 0 0 0;
+}
+
+.avatar-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 2;
+  padding: 0 0 0 50px;
+}
+
+.line {
+  border: 1px solid #acaca9;
+}
